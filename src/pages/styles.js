@@ -1,31 +1,62 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.main`
   padding: 0 20px;
   margin: 0 auto;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  @media (max-width: 780px) {
+    height: auto;
+    padding: 0;
+  }
+`;
+
+const openMain = keyframes`
+    from{
+        opacity: 0;
+        transform: translateX(-20px)
+    }to{
+        opacity: 1;
+    }
 `;
 
 export const Info = styled.section`
   background: none;
-  border: 2px solid black;
   display: flex;
   align-self: flex-end;
-  width: 400px;
+  align-items: center;
   height: 400px;
-  & > .container {
-    font-weight: 24px;
-    color: #ffffff;
+  animation: 1s ${openMain};
+  color: white;
+  align-self: center;
+  text-align: center;
+  > div {
+    > h1 {
+      > span {
+        font-weight: 900;
+        color: yellow;
+      }
+      font-size: 48px;
+      font-weight: bold;
+      @media (max-width: 780px) {
+        font-size: 38px;
+      }
+    }
+    > p {
+      margin-top: 15px;
+      font-size: 18px;
+    }
   }
 `;
 
 export const Banner = styled.section`
   width: 1200px;
-  height: 250px;
-  background: #2c323a;
+  height: 350px;
+  background: rgba(44, 50, 58, 0.6);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,7 +64,11 @@ export const Banner = styled.section`
   margin-bottom: 30px;
   padding: 50px 0;
   @media (max-width: 780px) {
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 335px;
+    flex-wrap: wrap;
+    height: 100%;
   }
 
   & > .container {
@@ -41,7 +76,14 @@ export const Banner = styled.section`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    & > .box-group {
+      display: flex;
+      justify-content: space-evenly;
+      @media (max-width: 780px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
     & > h1 {
       font-size: 2.25rem;
       color: white;
@@ -54,11 +96,6 @@ export const Banner = styled.section`
       margin: 0 auto;
       max-width: 500px;
       padding: 0 20px;
-    }
-    & > .box-group {
-      & > div + div {
-        margin-left: 20px;
-      }
     }
   }
 `;

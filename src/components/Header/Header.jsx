@@ -14,6 +14,7 @@ export default function Header() {
           <li>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="http://www.procelinfo.com.br/main.asp?View={86E6ABAE-BD4E-4F3B-86BF-229FD184D004}"
             >
               Professor
@@ -22,6 +23,7 @@ export default function Header() {
           <li>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://drive.google.com/drive/folders/1qUHE9OyiOS_8kHLdrqo0Gi6Br9x-8GIQ"
             >
               Estudante
@@ -30,6 +32,7 @@ export default function Header() {
           <li>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://chat.whatsapp.com/FzWA15suLiTGUuMSum8zDH"
             >
               Acessar Fórum
@@ -53,6 +56,7 @@ export default function Header() {
               <li>
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="http://www.procelinfo.com.br/main.asp?View={86E6ABAE-BD4E-4F3B-86BF-229FD184D004}"
                 >
                   Professor
@@ -61,6 +65,7 @@ export default function Header() {
               <li>
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://drive.google.com/drive/folders/1qUHE9OyiOS_8kHLdrqo0Gi6Br9x-8GIQ"
                 >
                   Estudante
@@ -69,6 +74,7 @@ export default function Header() {
               <li>
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://chat.whatsapp.com/FzWA15suLiTGUuMSum8zDH"
                 >
                   Acessar Fórum

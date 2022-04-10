@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: red ;
+  background: red;
   height: 100px;
   & > div {
     display: block;

@@ -1,17 +1,36 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.main`
-  padding: 0 20px ;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+export const Info = styled.section`
+  background: none;
+  border: 2px solid black;
+  display: flex;
+  align-self: flex-end;
+  width: 400px;
+  height: 400px;
+  & > .container {
+    font-weight: 24px;
+    color: #ffffff;
+  }
 `;
 
 export const Banner = styled.section`
-  max-width: 1200px;
+  width: 1200px;
   height: 250px;
   background: #2c323a;
   position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
+  margin-bottom: 30px;
   padding: 50px 0;
   @media (max-width: 780px) {
     justify-content: center;
@@ -37,31 +56,6 @@ export const Banner = styled.section`
       padding: 0 20px;
     }
     & > .box-group {
-      position: absolute;
-      bottom: -35px;
-      margin: 0 auto;
-      left: 9%;
-      right: 9%;
-      @media (min-width: 768px) and (max-width: 1180px) {
-        bottom: -150px;
-        left: 0;
-        right: 0;
-
-        & > div:last-child {
-          margin-top: 20px ;
-        }
-      }
-
-      @media (min-width: 970px) and (max-width: 1180px) {
-        bottom: -50px;
-        left: 0;
-        right: 0;
-      }
-
-      @media (max-width: 780px) {
-        display: none;
-      }
-
       & > div + div {
         margin-left: 20px;
       }

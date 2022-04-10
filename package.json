@@ -9,7 +9,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",
+    "react-tsparticles": "^1.43.1",
     "styled-components": "^5.3.5",
+    "tsparticles": "^1.43.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
